@@ -20,8 +20,8 @@ The reasonable response to a revert feels like escalation: undo it back, point
 out that you were right, note that the reverting editor did not even leave a
 summary. Every community has a name for the state this produces and a sanction
 attached to it. Wikipedia's is the three-revert rule, which is not an
-entitlement to three reverts, although roughly half the editors who get blocked
-under it believed it was.
+entitlement to three reverts, although a good share of the editors who get
+blocked under it believed it was.
 
 The move that works is duller. You go to the talk page. You state what you
 changed, why, and what source you used. You ask a question you actually want

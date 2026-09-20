@@ -37,5 +37,5 @@ cases, several of which are still in print.
 - reliable sources, self-published sources, and the circularity problem
 - citogenesis: four documented cases and how long each survived
 - survey, imagery and trace: OSM's standard of evidence
-- reference rot — roughly a fifth of cited links are dead within a decade
+- reference rot — about one in nine links cited on Wikipedia is already dead
 - moving between projects without importing the wrong standard

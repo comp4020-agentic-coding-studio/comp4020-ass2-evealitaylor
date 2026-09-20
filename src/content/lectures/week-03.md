@@ -2,7 +2,7 @@
 title: "Be bold"
 description:
   The mechanics of a first contribution, the standard of evidence behind it,
-  and the instruction Wikipedia has given newcomers since 2002
+  and the instruction Wikipedia has given newcomers since its second day
 week: 3
 date: 2027-03-08
 teachers:
@@ -13,10 +13,11 @@ related:
   - assessments/contribution-log
 ---
 
-Wikipedia's advice to a new editor fits on a page and has barely changed in
-twenty-five years: be bold. Make the change. Do not ask permission, do not
-propose it on the talk page first, do not wait for consensus that no one is
-going to assemble on your behalf.
+Wikipedia's advice to a new editor fits on a page and has barely changed since
+somebody wrote it down on 17 January 2001, two days after the site opened: be
+bold. Make the change. Do not ask permission, do not propose it on the talk
+page first, do not wait for consensus that no one is going to assemble on your
+behalf.
 
 This is generous advice and it is also a trap, because the sentence that
 follows it in practice is: and then be reverted. The cycle has a shortcut,

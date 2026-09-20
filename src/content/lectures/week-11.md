@@ -22,8 +22,9 @@ switched off.
 OSM's version of the argument is about imports. Bulk-loading a government road
 dataset adds in an afternoon what surveyors would take years to map, at the
 cost of data nobody on the ground has checked and a local community who were
-not consulted. The project has been arguing about this, with unusual politeness,
-since 2009.
+not consulted. The project has been arguing about this, with unusual
+politeness, since the TIGER road import landed across the United States in
+2007.
 
 The new problem is different in kind. Generated prose is cheap, plausible,
 correctly formatted, and sometimes cites sources that do not exist. Assessment

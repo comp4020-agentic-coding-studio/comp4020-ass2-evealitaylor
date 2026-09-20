@@ -28,15 +28,16 @@ spent six years protecting were left with nothing between them and the worst
 users on the platform.
 
 The alternative to voice is exit, and volunteer projects have a rarer third
-option, which is to leave and take the work with you. Wikipedia exists because
-its contributors forked away from a commercial predecessor. It is the only real
-leverage in the arrangement, it is expensive, and it usually fails.
+option, which is to leave and take the work with you. Spanish Wikipedia's
+contributors did it in 2002, over a proposal to sell advertising, and the
+proposal was dropped. It is the only real leverage in the arrangement, it is
+expensive, and it mostly does not work.
 
 ## Outline
 
 - Hirschman's exit, voice and loyalty, applied to unpaid contributors
 - 2023: the blackout, the replacements, and what it established
-- forking a commons: Wikipedia's own origin, and three forks that died
+- forking a commons: three forks, and why only one of them had to die
 - what a fork needs to survive — the data, the tools, or the people
 - withdrawal of labour when the people harmed are not the people you are
   bargaining with

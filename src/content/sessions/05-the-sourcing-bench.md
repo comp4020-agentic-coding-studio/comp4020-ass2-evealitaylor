@@ -38,7 +38,8 @@ completely and the other will not touch. Write it down. That source is the
 course's whole argument about provenance, compressed into a footnote.
 
 Last half hour: link rot. Run your citations, find the dead ones, archive the
-live ones. Roughly one in five will be gone.
+live ones. About one in nine of Wikipedia's is already gone, and more than half
+its articles have at least one.
 
 ## Afterwards
 

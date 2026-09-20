@@ -26,9 +26,11 @@ others. The rule launders an existing distribution of attention into an
 editorial standard and then applies it evenly, which is exactly how a fair
 procedure produces a lopsided result.
 
-You can see the shape in the outcomes. Biographies of women were nominated for
-deletion at higher rates than biographies of men for most of the 2010s, and the
-editors doing the nominating were following the policy correctly.
+You can see the shape in the outcomes. Between 2017 and 2020 women were
+somewhere under a fifth of the biographies on English Wikipedia and over a
+quarter of the deletion nominations — and once nominated, their biographies
+were more likely than men's to be kept. Nominated more, deleted less: the
+nominations were not finding a real notability problem.
 
 This is the week where the course stops being about etiquette. Hold both
 thoughts: the process is legitimate, and the process is biased, and your job as
