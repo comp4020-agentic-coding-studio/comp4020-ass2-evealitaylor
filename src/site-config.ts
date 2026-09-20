@@ -2,11 +2,11 @@ import { defineSiteConfig } from "astro-theme-university/types";
 import { slopBranding } from "astro-theme-slop";
 import { courseMeta } from "./course-config";
 
-// The underlying collection and URL remain `sessions`; these labels are the
-// language students see. Change them to Studios, Tutorials, Expeditions, etc.
+// The underlying collection and URL remain `sessions`. Students are rostered
+// onto a Shift, because that is what the work is.
 export const sessionLabels = {
-  singular: "Session",
-  plural: "Sessions",
+  singular: "Shift",
+  plural: "Shifts",
 } as const;
 
 export const graphCollections = ["sessions", "assessments", "lectures", "people"];
@@ -24,11 +24,15 @@ export const siteConfig = defineSiteConfig({
     { text: "Lectures", href: "/lectures/" },
     { text: sessionLabels.plural, href: "/sessions/" },
     { text: "Assessment", href: "/assessments/" },
+    { text: "The Log", href: "/log/" },
     { text: "People", href: "/people/" },
     { text: "Policies", href: "/policies/" },
   ],
 
   licence: "CC-BY-NC-SA-4.0",
   socialImage: "/src/assets/images/card.png",
-  socialImageAlt: `A preview card for ${courseMeta.code}: ${courseMeta.title}`,
+  socialImageAlt:
+    `A link card for ${courseMeta.code} ${courseMeta.title}: the course code and ` +
+    `title set in heavy type over a stack of horizontal bars standing in for a ` +
+    `moderation queue, in the Slop University gold and black`,
 });
