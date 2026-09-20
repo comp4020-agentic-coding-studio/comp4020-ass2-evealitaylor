@@ -11,8 +11,7 @@ marking:
   criteria:
     - name: Contributions accepted by the community
       weight: 30
-    - name: Quality of the annotation — what you predicted, what happened, what
-        you had misread
+    - name: "Quality of the annotation: prediction, outcome, and what you misread"
       weight: 45
     - name: Coverage and consistency across weeks 2–11
       weight: 15

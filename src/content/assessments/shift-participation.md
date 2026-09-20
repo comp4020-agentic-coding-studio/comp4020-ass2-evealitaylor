@@ -8,7 +8,7 @@ due: 2027-05-28T17:00:00+10:00
 weight: 15
 marking:
   mode: holistic
-  description:
+  description: >-
     Marked on the record of the work: shifts covered, decisions logged with
     reasons, appeals heard on other people's decisions, and cover provided when
     somebody else could not make it. The question is whether the sandbox was
