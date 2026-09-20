@@ -44,15 +44,17 @@ the prose. "Leverage" is the correct noun for what a volunteer withholding
 labour holds, and week 10 is built on it, so I narrowed the rule to the verb
 instead of rewriting the best sentence in the lecture
 ([`c96f4f1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/c96f4f1)). A harness rule that costs you accuracy is a
-rule to change. Week 10 is also the only other lecture I built a deck for
-([`104bfbb`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/104bfbb)): if the rule
-survives to protect that argument, the argument should be the one on screen.
+rule to change.
 
-The last failure the checks caught was not prose. ShiftBot rendered with no
-role, on the page arguing that the automated moderator belongs with the staff
-— the site conceding its own argument in markup. The label lived in three
-copies; it lives in one now, under a check
-([`0c6d981`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/0c6d981)).
+The rule that did most for the prose is the one that nearly sank it.
+"Specifics or nothing" demands real platforms, real years, real disputes —
+and unlike a generality, a specific can be wrong. So I checked every
+real-world claim on the site against its sources. Nine failed, including the
+ratio the course opens on: thirty thousand is Wikipedia's five-edit
+threshold, not its hundred-edit one
+([`3237916`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/3237916)). An agent writes
+plausible specifics as fluently as true ones, and only one of those is
+checkable.
 
 What I deliberately left out is coherence. I can test that twelve weeks exist,
 that each declares what leaves the room, and that assessment sums to 100. I
