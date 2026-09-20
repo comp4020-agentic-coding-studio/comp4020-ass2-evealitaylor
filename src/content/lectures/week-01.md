@@ -12,11 +12,12 @@ related:
   - sessions/01-induction
 ---
 
-English Wikipedia carries around seven million articles. The number of people
-who make more than a hundred edits in a given month is roughly thirty thousand.
-Divide one by the other and you have the course in a single ratio: a reference
-work consulted a billion times a month, maintained by a workforce that would
-fit in a football stadium and leave most of the seats empty.
+English Wikipedia carries around seven million articles. Roughly thirty
+thousand people edit it more than five times in a given month, and around
+three thousand edit it more than a hundred times. Divide the articles by the
+second number and you have the course in a single ratio: a reference work
+consulted billions of times a month, maintained by a workforce that would fit
+in a football stadium and leave most of the seats empty.
 
 Run the same arithmetic on Reddit, on OpenStreetMap, on the package registry
 your last project pulled four hundred dependencies from. The shape holds. A
