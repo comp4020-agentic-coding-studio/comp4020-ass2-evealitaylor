@@ -1,53 +1,56 @@
 # Process overview
 
-<!-- TEMPLATE: this file is a shape to fill in, not a form. Replace everything
-     in it with your own overview, and delete this comment — `pnpm
-     check:evidence` will remind you if it's still here. -->
-
-Written by you, for a reader: how you got from the brief to the harness and
-agentic workflow behind this submission. Markers read this file and follow its
-citations; they don't trawl the repo for evidence you didn't point at.
-
-This file is the shape; the course site's
-[assessment page](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#what-you-submit)
-is the requirement, and its
-[word counts](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#word-counts)
-cover every deliverable.
-
 ## What I built
 
-One paragraph: the thing, and the idea behind it.
+SLOP6531 *The Unpaid Shift*: a postgraduate course arguing that Wikipedia,
+every subreddit and half of open source are maintained by unpaid people doing
+janitorial work under rules they learned by being told off, and that this is
+teachable. Twelve weeks take a student from newcomer to steward to handover,
+contributing to a real project the whole way.
 
 ## How I got here
 
-The account of the process: how the work actually went, and how you knew the
-result was right. Tell it in whatever order makes it clear. A weekly prototype
-needs a paragraph or two; an assignment needs more.
+I started with a subject area — "things people do online that nobody teaches" —
+and the first real decision was recognising that this was not yet a course. A
+subject area generates content indefinitely, which is exactly what an agent is
+good at and exactly what produces twelve interchangeable weeks. So before any
+page existed I wrote the premise as one sentence and put it at the top of
+`CLAUDE.md` as a test every page has to pass: a page that would sit just as
+happily in a generic digital-citizenship course gets rewritten, not patched
+([`3ec9ab1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/3ec9ab1)).
 
-Cite the record as you go, as links whose text is the commit hash or range and
-whose target is this repo's commit or compare URL, so a reader clicks straight
-to the evidence:
+The call I spent longest on was where the satire points. I wanted the register
+openly satirical, and the obvious target is the material itself — people
+arguing about railway station dates at midnight. I rejected that, because the
+course requires students to contribute alongside those people for real, and a
+site that mocks them makes that requirement indefensible. The harness rule is
+"at the university, never at the volunteers": SlopU solemnly credentialing
+unpaid work, with rostered Shifts and a Continuity of Service policy, while
+burnout and moderator capture are treated as material rather than as jokes.
+Every page was written against that line, and it is the rule that did the most
+work.
 
-- one commit: [`a1b2c3d`](https://github.com/YOUR-ORG/YOUR-REPO/commit/a1b2c3d)
-- a range:
-  [`a1b2c3d...e4f5a6b`](https://github.com/YOUR-ORG/YOUR-REPO/compare/a1b2c3d...e4f5a6b)
+Choosing real contributions over reconstructed ones forced the rest. If
+students edit live projects, the policies page stops being boilerplate and
+becomes the thing that makes the course defensible, so the contributor
+undertaking is four clauses and week 1 is two hours of admin with no editing in
+it ([`b7f4a3d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/b7f4a3d)). I encoded that in `spec/` rather than
+trusting myself: the undertaking must be published, carry all four clauses, and
+be reachable from the two pages that rely on it.
 
-To pair a prompt with the commit it produced, quote the prompt (curated, not a
-full transcript) next to the citation:
+I also put my own style rules under test, running the slop ban list over the
+rendered HTML. That immediately caught something — and the rule was wrong, not
+the prose. "Leverage" is the correct noun for what a volunteer withholding
+labour holds, and week 10 is built on it, so I narrowed the rule to the verb
+instead of rewriting the best sentence in the lecture
+([`c96f4f1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/c96f4f1)). A harness rule that costs you accuracy is a
+rule to change.
 
-> the prompt, verbatim
+What I deliberately left out is coherence. I can test that twelve weeks exist,
+that each declares what leaves the room, and that assessment sums to 100. I
+cannot test whether the arc holds, so I did not write a check that pretends to
+— that is the crit's job, and a green suite that implied otherwise would be
+worse than no suite.
 
-Screenshots are welcome where one carries the point better than a sentence does.
-Commit the file to this repo and link it with a **relative** path, which is what
-makes it render on GitHub: `![alt text](docs/before.png)`. Images don't count
-towards the word count and don't replace the citation.
-
-## Before you ship
-
-`pnpm check:evidence` verifies that this comment is gone, that your citations
-resolve to real commits, that a crit week's reflection entry is in
-`reflections/`, and that your `CLAUDE.md` is there. It checks that your account
-is traceable, not that it is good: that is the marker's call.
-
-Images aren't checked: unlike a citation whose SHA doesn't resolve, a broken
-image is visible the moment this file is rendered on GitHub.
+The full build, from empty harness to deployed site:
+[`cfbbfc3...c96f4f1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/compare/cfbbfc3...c96f4f1).
