@@ -35,10 +35,14 @@ material to take seriously, not punchlines.
 
 ## Prose rules
 
-- **No slop.** Ban list: "delve", "leverage", "navigate the landscape",
-  "in today's digital age", "it's not just X, it's Y", "unpack", "robust",
-  "tapestry", "journey", "empower". Also banned: the three-item list used as a
-  rhythm device when two items or four would be truer.
+- **No slop.** Ban list: "delve", "navigate the landscape", "in today's digital
+  age", "unpack", "robust", "tapestry", "journey", "empower", "dive into",
+  "it's not just X, it's Y". Also banned: the three-item list used as a rhythm
+  device when two items or four would be truer.
+  "Leverage" is banned **as a verb only**. The noun is the correct word for what
+  a volunteer withholding labour actually has, and week 10 needs it. A style
+  rule that costs the course its most precise sentence is the wrong rule;
+  `spec/course-voice.test.ts` holds the narrowed version.
 - **Specifics or nothing.** Name the real platform, the real policy shortcut
   (WP:BRD, WP:N, AutoModerator, CSD G11), the real year, the real dispute. A
   sentence that could be written by someone who had never done this work is
