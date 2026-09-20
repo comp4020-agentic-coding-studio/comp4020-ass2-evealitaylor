@@ -7,6 +7,7 @@ week: 10
 date: 2027-05-10
 teachers:
   - ren-vasquez
+slides: /decks/week-10/
 related:
   - sessions/10-fork-drill
 ---
