@@ -23,7 +23,9 @@ be asked what it meant.
 
 Your Contribution Log closes at noon today. Weeks 2 to 11, submitted.
 
-Export ShiftBot's decision history and the week 7 rationale register.
+Export ShiftBot's decision history and the week 7 rationale register. The
+2026 cohort's [audit and its amendment](/sandbox/) are published, including
+the false positive they traded away.
 
 ## In the Shift
 

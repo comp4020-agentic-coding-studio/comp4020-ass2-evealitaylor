@@ -39,7 +39,8 @@ community that cannot tell you whether a machine or a person removed something
 cannot be appealed to.
 
 Write the rationale register as you go — one line per rule, why it exists. In
-week 12 you will find out that this is the only part anyone needed.
+week 12 you will find out that this is the only part anyone needed. Last
+year's is [published](/sandbox/), with the ruleset it explains.
 
 ## Afterwards
 

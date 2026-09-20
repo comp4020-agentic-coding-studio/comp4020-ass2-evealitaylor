@@ -1,0 +1,119 @@
+---
+title: The Sandbox
+description:
+  The ruleset the 2026 cohort wrote in week 7, the config that enforces part
+  of it, and the register that says why each rule exists.
+heroTitle: The Sandbox
+---
+
+# The Sandbox
+
+From week 7 the cohort governs a small community of its own. It has a
+submission queue, an appeals route, and a rota that staffs both until the end
+of semester. It exists so that the first removal you ever write costs a
+classmate an evening instead of costing a stranger their contribution.
+
+Below is the 2026 cohort's sandbox as they handed it on. It is published
+because week 12 requires it: the Continuity of Service policy does not accept
+a handover nobody outside the room can read, and the cohort inheriting a
+ruleset is entitled to see what they are inheriting.
+
+## The ruleset
+
+Eight rules. Week 7 gives you two hours and one constraint — a newcomer has to
+read all of it — so the 2026 cohort cut fourteen drafts down to this.
+
+1. **Post in English, or post a translation with it.** First breach: removed
+   with the reason, repost welcome.
+2. **Accounts under seven days old are held for review.** Not a removal. A
+   human looks within a day.
+3. **Cite a source for any factual claim about a real community.** First
+   breach: a comment asking for one. Removed after 24 hours if none arrives.
+4. **Do not post screenshots that identify an account with fewer than 500
+   followers.** First breach: removed, no warning, because the harm is already
+   done.
+5. **One submission per person per day.** First breach: the later one removed.
+6. **Disagree with the argument, not the person.** First breach: a warning
+   naming the sentence.
+7. **Disclose generated text.** Undisclosed is treated as rule 3, not as
+   misconduct.
+8. **Appeals go to modmail, not to the thread.** First breach: the comment
+   removed with the modmail link.
+
+Rule 6 is the one deliberately left to a person. The cohort's note on it reads:
+*"Every threshold we drafted either caught quoting someone in order to disagree
+with them, or caught nothing. If it needs judgement, say so rather than
+pretending a word list has any."*
+
+## What the machine actually enforces
+
+Rules 2 and 8 are ShiftBot's. Everything else is yours, and the ruleset says so
+on its face, because a community that cannot tell you whether a machine or a
+person removed something cannot be appealed to.
+
+```yaml
+---
+    # rule 2 — new accounts, held not removed
+    type: submission
+    author:
+        account_age: "< 7 days"
+    action: filter
+    action_reason: "Rule 2 — account under seven days"
+    comment: |
+        Held for review under rule 2, because your account is less than a
+        week old. A moderator reads this within a day. Nothing is lost and
+        you do not need to repost.
+---
+    # rule 8 — appeals belong in modmail
+    type: comment
+    body (includes-word): ["appeal", "unban", "why was this removed"]
+    action: remove
+    action_reason: "Rule 8 — appeals to modmail"
+    comment: |
+        Removed under rule 8. Appeals go to modmail so that somebody who did
+        not make the decision can hear it.
+---
+```
+
+Rule 5 is the interesting one. The cohort wrote it expecting ShiftBot to hold
+the line and only discovered in week 11 that AutoModerator has no rate limit to
+give them. The rule had been enforced by whoever happened to notice, for four
+weeks, which is to say unevenly. Nobody had written that down because nobody
+knew.
+
+## The rationale register
+
+One line per rule, why it exists. In week 12 you find out this is the only part
+anyone needed.
+
+| Rule | Added | Because |
+| --- | --- | --- |
+| 2 | wk 7 | Drafted before anything happened. Never tested against a real problem. |
+| 3 | wk 7 | The cohort's own norm maps all found this rule enforced and unwritten elsewhere. |
+| 4 | wk 8 | A screenshot of a moderator's profile, posted to argue they were inconsistent. Removed in nine minutes. The rule is that incident. |
+| 6 | wk 8 | Two threads that were about the arguments until they were not. |
+| 8 | wk 9 | Appeals were being litigated under the removal, by the person who made it. |
+
+Rule 4 is the one to read twice. It exists because of a single afternoon, it
+names a number nobody can justify, and the next cohort will inherit it with no
+memory of the afternoon. That is how every community you will work in got the
+rules it has.
+
+## What the week 11 audit changed
+
+ShiftBot's rule 8 filter removed fourteen comments in four weeks. Three were
+appeals in the wrong place. One was a student discussing the Arbitration
+Committee's appeal process in a thread about week 8, which contains the word
+"appeal" and is not an appeal.
+
+The register now carries the amendment and the reason: `~body (includes):
+["arbitration", "ArbCom"]` was added as an exception, and the cohort recorded
+that they had traded a rarer false positive for a rule a newcomer is less
+likely to predict. Both halves of that sentence are the point.
+
+## What passes on
+
+The ruleset, the config, the register, the rota and the week 10 dissent, to the
+2027 cohort, in week 12. They may repeal any of it. The one thing they may not
+do is repeal a rule without reading why it was added, which is the only clause
+in this course that binds people who have not enrolled yet.
