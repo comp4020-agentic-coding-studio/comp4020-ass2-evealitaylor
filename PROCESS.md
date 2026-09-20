@@ -53,4 +53,4 @@ cannot test whether the arc holds, so I did not write a check that pretends to
 worse than no suite.
 
 The full build, from empty harness to deployed site:
-[`cfbbfc3...c96f4f1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/compare/cfbbfc3...c96f4f1).
+[`cfbbfc3...2991892`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/compare/cfbbfc3...2991892).
