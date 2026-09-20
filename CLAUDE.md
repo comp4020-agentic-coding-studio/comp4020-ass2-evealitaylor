@@ -37,8 +37,9 @@ material to take seriously, not punchlines.
 
 - **No slop.** Ban list: "delve", "navigate the landscape", "in today's digital
   age", "unpack", "robust", "tapestry", "journey", "empower", "dive into",
-  "it's not just X, it's Y". Also banned: the three-item list used as a rhythm
-  device when two items or four would be truer.
+  "seamless", "ever-evolving", "it's not just X, it's Y". Also banned: the
+  three-item list used as a rhythm device when two items or four would be
+  truer.
   "Leverage" is banned **as a verb only**. The noun is the correct word for what
   a volunteer withholding labour actually has, and week 10 needs it. A style
   rule that costs the course its most precise sentence is the wrong rule;

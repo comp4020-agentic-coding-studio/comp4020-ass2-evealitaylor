@@ -44,6 +44,7 @@ describe("prose", () => {
     "unpack",
     "robust",
     "tapestry",
+    "journey",
     "empower",
     "seamless",
     "ever-evolving",
@@ -58,6 +59,14 @@ describe("prose", () => {
       }
     }
     expect(found, `banned vocabulary in the built site:\n${found.join("\n")}`).toEqual([]);
+  });
+
+  it("never reaches for the not-just-X-its-Y construction", () => {
+    // The one banned item that is a shape rather than a word. It promises a
+    // reframing and delivers a synonym.
+    const shape = /\b(?:it'?s|it is) not (?:just|only) [^,.]{2,40}, (?:it'?s|it is)\b/i;
+    const offenders = pages.filter((page) => shape.test(visibleText(page.html)));
+    expect(offenders.map((page) => page.path)).toEqual([]);
   });
 
   it("uses leverage only as a noun", () => {
