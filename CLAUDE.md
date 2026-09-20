@@ -1,11 +1,71 @@
-# Your harness
+# Harness — SLOP6531 *The Unpaid Shift*
 
-This file is yours, and it arrives with no rules in it on purpose --- this note
-is all there is, and it goes when you write your own. The rules you hold the
-agent to are part of what gets marked, so they should be rules you decided on.
+The platform is documented in `README.md` and is not restated here. This file is
+the course's editorial contract: what has to be true of the curriculum and the
+prose, expressed as rules an agent can be held to.
 
-Nothing about the starter is recorded here. The platform under you is fixed and
-documented in `README.md`, and the
-[course website](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/)
-publishes this deliverable's brief and spec. Read both before you plan or build;
-what the agent needs to carry from either is your call.
+## The one idea
+
+Wikipedia, every subreddit, OpenStreetMap and half of open source are maintained
+by unpaid people doing janitorial work under rules they learned by being told
+off. This course takes that work seriously — as a craft with transferable skill,
+and as a labour question. Every page must be traceable back to that sentence. A
+page that would sit just as happily in a generic "digital citizenship" course is
+off-spine and gets rewritten, not patched.
+
+The arc is fixed: **newcomer → contributor → steward → handover.** Weeks move
+along it. A week that could be swapped with another week without anyone noticing
+is a failed week.
+
+## Where the satire points
+
+At the university, never at the volunteers.
+
+The joke is that Slop University has solemnly credentialed unpaid internet
+janitorial work: rostered shifts, learning outcomes for mopping, a Continuity of
+Service policy, a marking rubric for ban appeals. The register is
+straight-faced institutional prose applied to subjects universities find beneath
+them, and it never winks.
+
+The people on the other end of the queue — editors, mods, mappers, maintainers —
+are treated with complete respect, because students in this course will be
+contributing alongside them for real. **Never write a line that mocks a
+volunteer for caring.** Burnout, unpaid overwork and moderator capture are
+material to take seriously, not punchlines.
+
+## Prose rules
+
+- **No slop.** Ban list: "delve", "leverage", "navigate the landscape",
+  "in today's digital age", "it's not just X, it's Y", "unpack", "robust",
+  "tapestry", "journey", "empower". Also banned: the three-item list used as a
+  rhythm device when two items or four would be truer.
+- **Specifics or nothing.** Name the real platform, the real policy shortcut
+  (WP:BRD, WP:N, AutoModerator, CSD G11), the real year, the real dispute. A
+  sentence that could be written by someone who had never done this work is
+  deleted.
+- **Short sentences carry the jokes.** The register does the comedy; adjectives
+  do not.
+- **Second person, present tense**, for anything a student does.
+- Never open a page by restating its own title back to the reader.
+
+## Curriculum rules
+
+- Twelve dated teaching weeks. Each week has exactly one lecture and exactly
+  one Shift, and they carry the same `week:` number and the same date.
+- Every Shift declares a `produces:` key naming the artefact that leaves the
+  room. Weeks 2–11 feed the Contribution Log; if a Shift cannot say what it
+  contributes, the week is not designed yet.
+- Assessment totals exactly 100% across four items, and every assessment page
+  carries a `marking:` block.
+- Facts about the course record live in `src/course-config.ts` and are never
+  restated in prose.
+- Real contributions mean real people are affected. The policies page owns the
+  ethics of that and is load-bearing content, not boilerplate.
+
+## Working rules
+
+- `pnpm check` stays green. Run it before any commit that touches content.
+- Commit in coherent slices with messages that say what changed about the
+  *course*, not about the files.
+- Before adding a page, say which rule above it satisfies. If none, don't add
+  it.
