@@ -117,3 +117,35 @@ describe("assessment briefs", () => {
     }
   });
 });
+
+describe("the cast", () => {
+  // The People page argues that the automated moderator belongs with the
+  // staff rather than filed under infrastructure, because in most communities
+  // it makes the first decision on nearly everything. A bot rendered without
+  // the role every human gets is the page quietly conceding the argument.
+  //
+  // This is here because it already broke once: the role label lived in three
+  // separate copies, and the only role none of them knew was the bot's.
+  const profiles = pages.filter(
+    (page) => page.path.startsWith("people/") && !page.path.startsWith("people/index"),
+  );
+
+  it("gives every member of the cast a rendered role", () => {
+    expect(profiles.length).toBeGreaterThanOrEqual(4);
+    for (const profile of profiles) {
+      expect(profile.html, `${profile.path} renders no role`).toContain("<dt>Role</dt>");
+    }
+  });
+
+  it("never prints a role in the raw lowercase the frontmatter stores", () => {
+    for (const profile of profiles) {
+      const role = profile.html.match(/<dt>Role<\/dt><dd>([^<]+)<\/dd>/)?.[1] ?? "";
+      expect(role, `${profile.path} prints an unlabelled role`).toMatch(/^[A-Z]/);
+    }
+  });
+
+  it("lists the automated moderator alongside the humans", () => {
+    const index = pages.find((page) => page.path.startsWith("people/index"));
+    expect(visibleText(index?.html ?? "")).toContain("ShiftBot");
+  });
+});
