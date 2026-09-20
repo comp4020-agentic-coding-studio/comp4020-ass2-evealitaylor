@@ -44,7 +44,9 @@ the prose. "Leverage" is the correct noun for what a volunteer withholding
 labour holds, and week 10 is built on it, so I narrowed the rule to the verb
 instead of rewriting the best sentence in the lecture
 ([`c96f4f1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/c96f4f1)). A harness rule that costs you accuracy is a
-rule to change.
+rule to change. Week 10 is also the only other lecture I built a deck for
+([`104bfbb`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/104bfbb)): if the rule
+survives to protect that argument, the argument should be the one on screen.
 
 What I deliberately left out is coherence. I can test that twelve weeks exist,
 that each declares what leaves the room, and that assessment sums to 100. I
@@ -53,4 +55,4 @@ cannot test whether the arc holds, so I did not write a check that pretends to
 worse than no suite.
 
 The full build, from empty harness to deployed site:
-[`cfbbfc3...2991892`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/compare/cfbbfc3...2991892).
+[`cfbbfc3...main`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/compare/cfbbfc3...main).
