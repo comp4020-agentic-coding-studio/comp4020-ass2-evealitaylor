@@ -2,6 +2,8 @@
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import SessionsGrid from "../../components/SessionsGrid.astro";
 import { sessionLabels, siteConfig } from "../../site-config";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <ContentLayout
@@ -18,6 +20,14 @@ import { sessionLabels, siteConfig } from "../../site-config";
     Every Shift page says what to bring, what happens in the room, and what
     leaves it. The last of those is the one to read first &mdash; from week 2
     onward, whatever a Shift produces is what your Contribution Log is made of.
+  </p>
+  <p>
+    The dates jump three weeks between week 6 and week 7. That is the
+    university's mid-semester break, and your project does not get one. The Log
+    asks for nothing across it. Clause 4 of the
+    <a href={`${base}policies/`}>contributor undertaking</a> still does: a
+    talk-page thread you opened in week 6 is not closed by the teaching
+    calendar.
   </p>
   <SessionsGrid />
 </ContentLayout>

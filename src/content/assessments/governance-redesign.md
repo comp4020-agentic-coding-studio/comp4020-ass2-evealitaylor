@@ -2,7 +2,7 @@
 title: "Governance Redesign"
 description:
   Take a real community, rewrite how it governs itself, and defend the rewrite
-  against the evidence of what your own rules did for five weeks
+  against the evidence of what your own rules did for four weeks
 week: 12
 due: 2027-05-24T12:00:00+10:00
 weight: 30
@@ -26,7 +26,7 @@ related:
 > fix in volunteer hours.
 
 By week 12 you have written a ruleset, encoded part of it in a machine, enforced
-it against your classmates, heard appeals, designed a rota and audited five
+it against your classmates, heard appeals, designed a rota and audited four
 weeks of your own automated decisions. This is the assessment that asks what you
 now think.
 

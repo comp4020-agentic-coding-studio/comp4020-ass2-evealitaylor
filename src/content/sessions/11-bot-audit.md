@@ -1,7 +1,7 @@
 ---
 title: "Bot audit"
 description:
-  You audit ShiftBot against five weeks of its own decisions and find out what
+  You audit ShiftBot against four weeks of its own decisions and find out what
   the rules you wrote in week 7 have actually been doing
 week: 11
 date: 2027-05-17
@@ -16,7 +16,7 @@ spec:
   - your Governance Redesign states a position on machine contribution
 ---
 
-Five weeks of automated decisions, made on your behalf, by a thing that cannot
+Four weeks of automated decisions, made on your behalf, by a thing that cannot
 be asked what it meant.
 
 ## Before the Shift
@@ -36,7 +36,7 @@ rule that caused it. This is usually humbling, because the rule will be one
 somebody in the room argued hard for in week 7.
 
 Then decide: keep, amend, retire. Every decision goes in the register with a
-reason, because in a fortnight you are handing this to strangers.
+reason, because next week you hand this to strangers.
 
 Last half hour, the harder question: generated submissions. The sandbox has
 been receiving them. Assessment is your scarce resource and it always was, so
