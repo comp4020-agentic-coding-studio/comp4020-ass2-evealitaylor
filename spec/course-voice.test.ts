@@ -158,3 +158,39 @@ describe("the cast", () => {
     expect(visibleText(index?.html ?? "")).toContain("ShiftBot");
   });
 });
+
+describe("the published handover", () => {
+  // Week 12 requires a handover a stranger can read without asking anyone,
+  // and the Continuity of Service policy is the course's joke about what
+  // happens when nobody files one. The sandbox page is the course meeting its
+  // own requirement. Without it, five weeks of the curriculum point at
+  // documents no prospective student can see.
+  const sandbox = pages.find((page) => page.path.startsWith("sandbox/"));
+
+  it("is published", () => {
+    expect(sandbox, "weeks 7 to 12 point at the sandbox; it has to exist").toBeDefined();
+  });
+
+  it("shows the ruleset, the machine's share of it, and why each rule exists", () => {
+    const text = visibleText(sandbox?.html ?? "").toLowerCase();
+    expect(text, "the register is the part week 12 says is the only part anyone needed").toContain(
+      "rationale register",
+    );
+    expect(
+      sandbox?.html,
+      "the config has to be the actual config, not a description of one",
+    ).toContain("<code");
+    expect(text, "the ruleset must say which rules ShiftBot enforces").toContain("shiftbot");
+  });
+
+  it("is reachable from the weeks that rely on it", () => {
+    for (const path of ["sessions/07-writing-the-rules", "sessions/11-bot-audit"]) {
+      const page = pages.find((p) => p.path.startsWith(path));
+      expect(page, `${path} did not build`).toBeDefined();
+      expect(
+        /href="[^"]*\/sandbox\/?"/.test(page?.html ?? ""),
+        `${path} names the sandbox and must link it`,
+      ).toBe(true);
+    }
+  });
+});

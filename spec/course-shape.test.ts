@@ -136,3 +136,24 @@ describe("the lecture series", () => {
     }
   });
 });
+
+describe("the Contribution Log is fed by the weeks that claim to feed it", () => {
+  // Two numbers stated on different pages: the curriculum rule that weeks
+  // 2-11 feed the Log, and the Log's own brief asking for ten entries.
+  // Nothing but this makes them agree, and a week added or dropped in the
+  // middle of the course is exactly how they would stop agreeing.
+  const contributing = sessions.filter((s) => {
+    const week = Number(s.meta?.week);
+    return week >= 2 && week <= 11;
+  });
+
+  it("runs one producing Shift for every entry the Log asks for", () => {
+    expect(contributing.length, "the Log asks for ten entries, weeks 2 to 11").toBe(10);
+    for (const shift of contributing) {
+      expect(
+        typeof shift.meta?.produces,
+        `${shift.id} is a Log week that contributes nothing`,
+      ).toBe("string");
+    }
+  });
+});
