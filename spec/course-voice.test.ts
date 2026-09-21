@@ -230,3 +230,23 @@ describe("the phone viewport", () => {
     expect(offenders, `unwrapped tables:\n${offenders.join("\n")}`).toEqual([]);
   });
 });
+
+describe("every page announces itself", () => {
+  // Three index pages shipped with no <h1> at all, because the theme takes a
+  // title from a body heading and these had only frontmatter. Their heading
+  // outline started at <h2>, so a screen reader reached twelve card headings
+  // without ever being told which page it was on. axe passes either way.
+  //
+  // Decks are exempt: a reveal.js slide deck is many title slides, not one
+  // document, and each impact slide is legitimately an <h1>.
+  const documents = pages.filter((page) => !page.path.startsWith("decks/"));
+
+  it("gives every page exactly one top-level heading", () => {
+    const offenders: string[] = [];
+    for (const page of documents) {
+      const count = (page.html.match(/<h1[\s>]/g) ?? []).length;
+      if (count !== 1) offenders.push(`${page.path}: ${count} <h1>`);
+    }
+    expect(offenders, `pages without exactly one <h1>:\n${offenders.join("\n")}`).toEqual([]);
+  });
+});
