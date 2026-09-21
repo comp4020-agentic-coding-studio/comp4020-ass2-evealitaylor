@@ -97,7 +97,7 @@ anyone needed.
 | 5 | wk 7 | One person posted six times before lunch on the first day. |
 | 6 | wk 8 | Two threads that were about the arguments until they were not. |
 | 7 | wk 9 | Two submissions nobody could check, both fluent and both plausible. |
-| 8 | wk 9 | Appeals were being litigated under the removal, by the person who made it. |
+| 8 | wk 9, amended wk 11 | Appeals were being litigated under the removal, by the person who made it. The audit added an exception for threads about arbitration. |
 
 Rule 4 is the one to read twice. It exists because of a single afternoon, it
 names a number nobody can justify, and the next cohort will inherit it with no
@@ -106,15 +106,16 @@ rules it has.
 
 ## What the week 11 audit changed
 
-ShiftBot's rule 8 filter removed fourteen comments in four weeks. Three were
-appeals in the wrong place. One was a student discussing the Arbitration
-Committee's appeal process in a thread about week 8, which contains the word
-"appeal" and is not an appeal.
+ShiftBot's rule 8 filter removed fourteen comments in four weeks. Ten were
+appeals in the wrong place. Three were people quoting rule 8 at somebody else.
+One was a student discussing the Arbitration Committee's appeal process in a
+thread about week 8, which contains the word "appeal" and is not an appeal.
 
-The register now carries the amendment and the reason: `~body (includes):
-["arbitration", "ArbCom"]` was added as an exception, and the cohort recorded
-that they had traded a rarer false positive for a rule a newcomer is less
-likely to predict. Both halves of that sentence are the point.
+Four of fourteen, then, on a rule nobody had thought was controversial. Rule
+8's line in the register gained a second sentence and the config gained
+`~body (includes): ["arbitration", "ArbCom"]`, and the cohort recorded what
+the exception cost: a rarer false positive, bought with a rule a newcomer is
+less likely to predict. Both halves of that are the point.
 
 ## What passes on
 
