@@ -14,6 +14,11 @@ interface Props {
 }
 
 const { marking } = Astro.props;
+
+// The table below is wrapped in .at-table-wrap by hand. The theme adds that
+// scrolling wrapper to markdown tables, but not to a table written inside a
+// component, and a criterion name here runs to seventy characters — which is
+// how this overflowed the 390px marking viewport on three assessment pages.
 ---
 
 <section aria-labelledby="how-marked">
@@ -21,13 +26,15 @@ const { marking } = Astro.props;
   {marking.mode === "holistic" ? (
     <p>{marking.description}</p>
   ) : (
-    <table>
-      <thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th></tr></thead>
-      <tbody>
-        {marking.criteria.map((criterion) => (
-          <tr><td>{criterion.name}</td><td>{criterion.weight}%</td></tr>
-        ))}
-      </tbody>
-    </table>
+    <div class="at-table-wrap">
+      <table>
+        <thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th></tr></thead>
+        <tbody>
+          {marking.criteria.map((criterion) => (
+            <tr><td>{criterion.name}</td><td>{criterion.weight}%</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   )}
 </section>

@@ -211,3 +211,22 @@ describe("the published handover", () => {
     }
   });
 });
+
+describe("the phone viewport", () => {
+  // The site is marked at 390x844 as well as 1920x1080, and a table is the
+  // classic way a page starts scrolling sideways. The theme wraps markdown
+  // tables in a scrolling container; a table written by hand in a component
+  // gets no such help, and that is exactly how three assessment pages shipped
+  // a marking model that overflowed on a phone. Contract, not construction:
+  // every table scrolls, however it got onto the page.
+  it("ships no table that can push the page sideways", () => {
+    const offenders: string[] = [];
+    for (const page of pages) {
+      const tables = (page.html.match(/<table/g) ?? []).length;
+      if (tables === 0) continue;
+      const wrapped = (page.html.match(/at-table-wrap/g) ?? []).length;
+      if (wrapped < tables) offenders.push(`${page.path}: ${tables} table(s), ${wrapped} wrapped`);
+    }
+    expect(offenders, `unwrapped tables:\n${offenders.join("\n")}`).toEqual([]);
+  });
+});
