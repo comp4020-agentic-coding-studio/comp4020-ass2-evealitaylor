@@ -2,64 +2,58 @@
 
 ## What I built
 
-SLOP6531 *The Unpaid Shift*: a postgraduate course arguing that Wikipedia,
-every subreddit and half of open source are maintained by unpaid people doing
-janitorial work under rules they learned by being told off, and that this is
-teachable. Twelve weeks, newcomer to handover, on a real project throughout.
+SLOP6531 *The Unpaid Shift*. A postgraduate course about the unpaid janitorial
+work that keeps Wikipedia, every subreddit and half of open source running.
+Twelve weeks, newcomer to handover, contributing to a real project the whole
+way.
 
 ## How I got here
 
-I started with a subject area — "things people do online that nobody teaches" —
-and the first real decision was recognising that this was not yet a course. A
-subject area generates content indefinitely, which is exactly what an agent is
-good at and exactly what produces twelve interchangeable weeks. So before any
-page existed I wrote the premise as one sentence and put it at the top of
-`CLAUDE.md` as a test every page has to pass: a page that would sit just as
-happily in a generic digital-citizenship course gets rewritten, not patched
-([`3ec9ab1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/3ec9ab1)). Two pages slipped
-past it anyway, a bare People index and a 404 that could have belonged to any
-course, and the rule says rewrite, so both were thrown out
-([`efbf960`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/efbf960)).
+I started with a subject area rather than a course: things people do online
+that nobody teaches. That was the problem. A subject area generates content
+forever, which is what an agent is good at, and it is also how you end up with
+twelve weeks nobody would notice you had shuffled.
 
-The call I spent longest on was where the satire points. The obvious target is
-the material itself — people arguing about railway station dates at midnight. I rejected that, because the
-course requires students to contribute alongside those people for real, and a
-site that mocks them makes that requirement indefensible. The harness rule is
-"at the university, never at the volunteers": SlopU solemnly credentialing
-unpaid work, with rostered Shifts and a Continuity of Service policy, while
-burnout and moderator capture are treated as material rather than as jokes.
-Every page was written against that line, and it did the most work.
+So before any page existed I wrote the premise as one sentence and put it at
+the top of `CLAUDE.md` ([`3ec9ab1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/3ec9ab1)). Any page that would
+sit just as happily in a generic digital-citizenship course gets rewritten,
+not patched. Two slipped through anyway. The People index was a bare grid and
+the 404 could have belonged to any course on earth, and I threw both out late
+on ([`efbf960`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/efbf960)).
 
-Choosing real contributions over reconstructed ones forced the rest. If
-students edit live projects, the policies page stops being boilerplate and
-becomes what makes the course defensible, so the undertaking is four clauses
-and week 1 is admin with no editing in it
-([`b7f4a3d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/b7f4a3d)). I encoded that in `spec/` rather than
-trusting myself: it must be published, carry all four clauses, and be
-reachable from the two pages that rely on it.
+The thing I went back and forth on longest was where the satire points. The
+obvious target is the material: people arguing about railway station dates at
+midnight. I dropped it. Students here contribute alongside those people for
+real, and a site that mocks them makes that indefensible. So the rule became
+at the university, never at the volunteers. SlopU solemnly credentialing the
+work, rostered Shifts, a Continuity of Service policy, while burnout and
+moderator capture stay material rather than punchlines.
 
-I also put my own style rules under test, running the slop ban list over the
-rendered HTML. That immediately caught something — and the rule was wrong, not
-the prose. "Leverage" is the correct noun for what a volunteer withholding
-labour holds, and week 10 is built on it, so I narrowed the rule to the verb
-instead of rewriting the best sentence in the lecture
-([`c96f4f1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/c96f4f1)). A harness rule that costs you accuracy is a
-rule to change.
+The rest followed from using real projects instead of reconstructed ones. If
+students edit live articles then the policies page stops being boilerplate and
+becomes the thing that makes the course defensible. The undertaking is four
+clauses. Week 1 is admin with no editing in it
+([`b7f4a3d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/b7f4a3d)). I put that in `spec/` rather than trust
+myself to remember it in week 9.
 
-The rule that did most for the prose is the one that nearly sank it.
-"Specifics or nothing" demands real platforms, real years, real disputes —
-and a specific, unlike a generality, can be wrong. So I checked every
-real-world claim against its sources. Nine failed, including the
-ratio the course opens on: thirty thousand is Wikipedia's five-edit
-threshold, not its hundred-edit one
-([`3237916`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/3237916)). An agent writes
-plausible specifics as fluently as true ones, and only one kind is checkable.
+I ran my own style rules over the built HTML too. The first thing they caught
+was a rule I had got wrong. "Leverage" is the right noun for what a volunteer
+withholding labour holds, week 10 is built on it, so I narrowed the ban to the
+verb instead of rewriting the best sentence in that lecture
+([`c96f4f1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/c96f4f1)).
 
-What I deliberately left out is coherence. I can test that twelve weeks exist,
-that each declares what leaves the room, and that assessment sums to 100. I
-cannot test whether the arc holds, so I did not write a check that pretends to
-— that is the crit's job, and a green suite that implied otherwise would be
-worse than no suite.
+The rule that did most for the prose is the one that nearly sank it. Specifics
+or nothing: real platforms, real years, real disputes. A generality cannot be
+wrong. A specific can. So I checked every real-world claim on the site against
+a source, and nine of them were not true. One was the ratio the whole course
+opens on. Thirty thousand is Wikipedia's five-edit threshold, not its
+hundred-edit one, and I had built a slide on it
+([`3237916`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/commit/3237916)). An agent writes plausible specifics as
+fluently as true ones.
 
-The full build, from empty harness to deployed site:
-[`cfbbfc3...main`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/compare/cfbbfc3...main).
+What I left out is coherence. I can check that twelve weeks exist, that each
+says what leaves the room, that assessment sums to 100. Whether the arc holds
+is not something I know how to test, so I did not write a check pretending to.
+That one is the crit's job.
+
+The whole build: [`cfbbfc3...main`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-evealitaylor/compare/cfbbfc3...main).
