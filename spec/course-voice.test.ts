@@ -183,6 +183,23 @@ describe("the published handover", () => {
     expect(text, "the ruleset must say which rules ShiftBot enforces").toContain("shiftbot");
   });
 
+  it("gives every live rule a rationale, which is week 12's actual promise", () => {
+    // Week 12's spec line: "every live rule has a rationale a stranger can
+    // read without asking anyone." The published ruleset and the published
+    // register are the course keeping that promise about its own sandbox, so
+    // a rule added without a reason is the one thing this page cannot do.
+    const html = sandbox?.html ?? "";
+    const rules = html.match(/<ol[\s\S]*?<\/ol>/)?.[0] ?? "";
+    const register = html.match(/<tbody[\s\S]*?<\/tbody>/)?.[0] ?? "";
+    const ruleCount = (rules.match(/<li/g) ?? []).length;
+    const reasonCount = (register.match(/<tr/g) ?? []).length;
+    expect(ruleCount, "the ruleset did not render as a list").toBeGreaterThan(0);
+    expect(
+      reasonCount,
+      `${ruleCount} rules published but ${reasonCount} have a recorded reason`,
+    ).toBe(ruleCount);
+  });
+
   it("is reachable from the weeks that rely on it", () => {
     for (const path of ["sessions/07-writing-the-rules", "sessions/11-bot-audit"]) {
       const page = pages.find((p) => p.path.startsWith(path));
